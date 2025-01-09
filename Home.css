@@ -1,4 +1,4 @@
-/* General Styles */
+ 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Header */
+ 
 header {
   position: fixed;
   top: 0;
@@ -27,7 +27,7 @@ header .logo img {
   border-radius: 50%;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -35,11 +35,11 @@ nav ul {
   align-items: center;
 }
 
-nav ul li {
+header nav ul li {
   margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -47,13 +47,13 @@ nav ul li a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   background-color: #028f4d;
   color: #fff;
   border-radius: 5px;
 }
 
-/* Hero Section */
+ 
 .hero {
   background-image: url('background-image.jpg');
   background-size: cover;
@@ -104,7 +104,7 @@ nav ul li a:hover {
   background-color: #028f4d;
 }
 
-/* Features Section */
+ 
 .features {
   padding: 50px 20px;
   text-align: center;
@@ -139,7 +139,7 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-/* Call-to-Action Section */
+ 
 .call-to-action {
   background-color: #04af5f;
   color: #fff;
@@ -177,7 +177,7 @@ nav ul li a:hover {
 
 
 
-/* Footer */
+ 
 footer {
   background-color: #f8f9fa;
   padding: 10px;

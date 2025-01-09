@@ -20,7 +20,7 @@ header .logo img {
     border-radius: 60px;
 }
 
-nav ul li {
+header nav ul li {
     margin-right: 35px;
     list-style: none;
     display: inline-block;
@@ -28,7 +28,7 @@ nav ul li {
 
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -38,7 +38,7 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     background-color: #028f4d;
     color: #fff;
     border-radius: 5px;
