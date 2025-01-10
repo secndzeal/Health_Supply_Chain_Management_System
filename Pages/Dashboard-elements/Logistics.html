@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Tracking</title>
+    <link rel="stylesheet" href="../Dashboard-elements/Dashboard-elements-css/Logistics.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../../Assets/8efef6493d8746459d6c6d3864284d1b-free.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="../../Pages/Dashboard.html">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Logistics Tracking</h1>
+        <div class="logistics-container">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="tracking-id" placeholder="Enter Tracking ID">
+                <button id="track-button">Track</button>
+            </div>
+
+            <!-- Tracking Details -->
+            <div class="tracking-details">
+                <h2>Shipment Details</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="label">Tracking ID:</span>
+                        <span class="value" id="tracking-id-value">123456789</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Status:</span>
+                        <span class="value" id="status-value">In Transit</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Origin:</span>
+                        <span class="value" id="origin-value">Warehouse A</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Destination:</span>
+                        <span class="value" id="destination-value">Hospital B</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Estimated Delivery:</span>
+                        <span class="value" id="delivery-value">2023-12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Visualization -->
+            <div class="map-container">
+                <h2>Shipment Location</h2>
+                <div id="map">
+                    <!-- Placeholder for map integration (e.g., Google Maps API) -->
+                    <img src="../Assets/map-placeholder.png" alt="Map Placeholder">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SALUSLINK. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

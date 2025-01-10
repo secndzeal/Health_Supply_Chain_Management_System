@@ -8,12 +8,6 @@
       {
         "nested-interactive": "off"
       }
-    ],
-    "axe/structure": [
-      "default",
-      {
-        "list": "off"
-      }
     ]
   }
 }
