@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications & Alerts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #04af5f;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin-left: 20px;
+    }
+
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      background-color: #028f4d;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #04af5f;
+      margin-bottom: 20px;
+    }
+
+    .notifications-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .notification-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .notification-tabs {
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      font-weight: bold;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #04af5f;
+      color: #04af5f;
+    }
+
+    .notification-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .notification-item {
+      display: flex;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      transition: all 0.3s ease;
+    }
+
+    .notification-item.unread {
+      background-color: #e8f5e9;
+      border-left: 4px solid #04af5f;
+    }
+
+    .notification-item:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .notification-icon {
+      margin-right: 15px;
+      font-size: 24px;
+      color: #04af5f;
+    }
+
+    .notification-content {
+      flex: 1;
+    }
+
+    .notification-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .notification-time {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .notification-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .mark-read-btn {
+      background: none;
+      border: none;
+      color: #04af5f;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .alert-badge {
+      background-color: #e53935;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+
+    .settings-btn {
+      padding: 8px 16px;
+      background-color: #04af5f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .settings-btn:hover {
+      background-color: #028f4d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../Assets/8efef6493d8746459d6c6d3864284d1b-free.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../Pages/Home.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+         
+        <li><a href="" id="logoutt">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Notifications & Alerts</h1>
+    
+    <div class="notifications-container">
+      <div class="notification-header">
+        <div class="notification-tabs">
+          <div class="tab active">All Notifications</div>
+          <div class="tab">Alerts</div>
+          <div class="tab">System</div>
+        </div>
+        <button class="settings-btn">Notification Settings</button>
+      </div>
+
+      <div class="notification-list">
+        <!-- Unread notification example -->
+        <div class="notification-item unread">
+          <div class="notification-icon">⚠️</div>
+          <div class="notification-content">
+            <div class="notification-title">Low Stock Alert: Medical Gloves</div>
+            <div class="notification-message">Inventory for Medical Gloves has fallen below safety threshold (Current: 45, Threshold: 50)</div>
+            <div class="notification-time">10 minutes ago</div>
+          </div>
+          <div class="notification-actions">
+            <button class="mark-read-btn">Mark as read</button>
+          </div>
+        </div>
+
+        <!-- Read notification example -->
+        <div class="notification-item">
+          <div class="notification-icon">📦</div>
+          <div class="notification-content">
+            <div class="notification-title">Order #2456 Shipped</div>
+            <div class="notification-message">Your order from MedSupply Inc. has been shipped and will arrive in 2 days.</div>
+            <div class="notification-time">2 hours ago</div>
+          </div>
+          <div class="notification-actions">
+            <button class="mark-read-btn">Mark as unread</button>
+          </div>
+        </div>
+
+        <!-- Alert notification example -->
+        <div class="notification-item">
+          <div class="notification-icon">❗</div>
+          <div class="notification-content">
+            <div class="notification-title">Expiration Warning: Bandages</div>
+            <div class="notification-message">Batch #B-2023-045 of Sterile Bandages will expire in 15 days.</div>
+            <div class="notification-time">5 hours ago</div>
+          </div>
+          <div class="notification-actions">
+            <button class="mark-read-btn">Mark as unread</button>
+          </div>
+        </div>
+
+        <!-- System notification example -->
+        <div class="notification-item">
+          <div class="notification-icon">🔄</div>
+          <div class="notification-content">
+            <div class="notification-title">System Maintenance Scheduled</div>
+            <div class="notification-message">The system will undergo maintenance on Friday at 2:00 AM. Expected downtime: 30 minutes.</div>
+            <div class="notification-time">Yesterday</div>
+          </div>
+          <div class="notification-actions">
+            <button class="mark-read-btn">Mark as unread</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SALUSLINK. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>

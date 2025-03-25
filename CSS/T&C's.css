@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #04af5f;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo img {
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+header nav ul li {
+    margin-right: 35px;
+    list-style: none;
+    display: inline-block;
+     
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #028f4d;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header nav ul li button {
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: larger;
+    text-decoration: none;
+    margin-right: 35px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+header nav ul li button a {
+    color: #04af5f;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    font-size: 25px;
+}
+
+
+.terms-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.last-updated {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.terms-content h2 {
+    color: #333;
+}
+
+.terms-content p {
+    line-height: 1.6;
+}
+
+.terms-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.return-button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-return {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #04af5f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-return:hover {
+    background-color: #028f4d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:transparent; /* #f8f9fa;*/
+    color: #0c0947;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

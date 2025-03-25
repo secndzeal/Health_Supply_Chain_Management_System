@@ -1,0 +1,145 @@
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #04af5f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+
+header .logo img {
+    height: 75px;  
+    width: 75px;  
+    border-radius: 50%; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;  
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;  
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #028f4d;
+    color: #fff;
+    border-radius: 5px;
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;  
+    background-image: url("../Assets/pexels-shkrabaanthony-5214951.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Signup Container  */
+.signup-container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    margin-top: 120px;  
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;  
+    font-size: 14px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04af5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #028f4d;
+}
+
+.signup-container .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.signup-container .terms input {
+    margin-right: 10px;  
+    transform: scale(1.2);  
+}
+
+.signup-container .terms label {
+    margin: 0;  
+    font-size: 14px; 
+    color: #555; 
+}
+
+.signup-container .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-container .login-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent; /* #f8f9fa;*/
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}

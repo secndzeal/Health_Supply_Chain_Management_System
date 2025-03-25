@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="../Dashboard.css">
+  <link rel="stylesheet" href="../CSS/Dashboard.css">
 </head>
 <body>
   <!-- Header -->
@@ -17,12 +17,12 @@
         <li><a href="../Pages/Home.html">Home</a></li>
         <li><a href="#">Profile</a></li>
         <li><a href="#">Settings</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="" id="logoutt">Logout</a></li>
       </ul>
     </nav>
   </header>
 
- 
+  <!-- Main Content -->
   <main>
     <h1>Dashboard</h1>
     <div class="dashboard-grid">
@@ -30,75 +30,69 @@
       <div class="card">
         <h2>Logistics Tracking</h2>
         <p>Track shipments in real-time.</p>
-        
-        <button><a href="../Pages/Dashboard-elements/Logistics.html">View Details</a></button>
+        <a href="../Pages/Dashboard-elements/Logistics.html" class="btn">View Details</a>
       </div>
 
       <!-- Key Performance Indicators (KPIs) -->
       <div class="card">
         <h2>Key Performance Indicators (KPIs)</h2>
         <p>Monitor critical metrics.</p>
-        <button><a href="../Pages/Dashboard-elements/KPIs.html">View Details</a></button>
+        <a href="../Pages/Dashboard-elements/KPIs.html" class="btn">View Details</a>
       </div>
 
       <!-- Inventory Levels -->
       <div class="card">
-        <h2>Inventory Levels</h2>
+        <h2>Inventory Management</h2>
         <p>Check real-time inventory data.</p>
-        <button><a href="../Pages/Dashboard-elements/Inventory-Levels.html">View Details</a></button>
+        <a href="../Pages/Dashboard-elements/Inventory-Management.html" class="btn">View Details</a>
       </div>
 
       <!-- Demand Forecasts -->
       <div class="card">
         <h2>Demand Forecasts</h2>
         <p>Predict future demand trends.</p>
-        <button>View Details</button>
+        <a href="../Pages/Dashboard-elements/Demand-Forecasts.html" class="btn">View Details</a>
       </div>
 
       <!-- Order Status -->
       <div class="card">
         <h2>Order Status</h2>
         <p>Track order progress.</p>
-        <button>View Details</button>
+        <a href="../Pages/Dashboard-elements/Order-Status.html" class="btn">View Details</a>
       </div>
 
       <!-- Supplier Performance -->
       <div class="card">
         <h2>Supplier Performance</h2>
         <p>Evaluate supplier metrics.</p>
-        <button>View Details</button>
+        <a href="../Pages/Dashboard-elements/Supplier-Management.html" class="btn">View Details</a>
       </div>
 
       <!-- Alerts and Notifications -->
       <div class="card">
         <h2>Alerts and Notifications</h2>
         <p>View critical alerts.</p>
-        <button>View Details</button>
+        <a href="../Pages/Dashboard-elements/Notification-alert.html" class="btn">View Details</a>
       </div>
 
       <!-- Cost Analytics -->
       <div class="card">
-        <h2>Cost Analytics</h2>
+        <h2>Reports and Analytics</h2>
         <p>Analyze logistics costs.</p>
-        <button>View Details</button>
+        <a href="../Pages/Dashboard-elements/Reports-Analytics.html" class="btn">View Details</a>
       </div>
 
-      <!-- Compliance Dashboard -->
-      <div class="card">
-        <h2>Compliance Dashboard</h2>
-        <p>Monitor compliance status.</p>
-        <button>View Details</button>
-      </div>
+      
 
       <!-- Custom Reports -->
       <div class="card">
         <h2>Custom Reports</h2>
         <p>Generate and export reports.</p>
-        <button>View Details</button>
+        <a href="#" class="btn">View Details</a>
       </div>
     </div>
   </main>
-
+<script src="../Scripts/LOGOUT.js"></script>
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 SALUSLINK Dashboard. All rights reserved.</p>

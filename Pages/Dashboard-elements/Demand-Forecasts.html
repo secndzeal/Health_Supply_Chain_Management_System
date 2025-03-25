@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demand Forecasts</title>
+  <link rel="stylesheet" href="../../CSS/Dashboard-elements-css/Demand-Forecasts.css"> <!-- Reuse the same CSS file -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="../../Assets/8efef6493d8746459d6c6d3864284d1b-free.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../Pages/Dashboard.html">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+         
+        <li><a href="" id="logoutt">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Demand Forecasts</h1>
+    <div class="demand-forecast-content">
+      <!-- Overview Section -->
+      <section class="overview">
+        <h2>Overview</h2>
+        <p>This section provides a summary of demand forecasts for the upcoming quarters. Use the filters below to customize the data.</p>
+      </section>
+
+      <!-- Filters Section -->
+      <section class="filters">
+        <h2>Filters</h2>
+        <div class="filter-options">
+          <label for="time-period">Time Period:</label>
+          <select id="time-period">
+            <option value="Q1">Q1 2024</option>
+            <option value="Q2">Q2 2024</option>
+            <option value="Q3">Q3 2024</option>
+            <option value="Q4">Q4 2024</option>
+          </select>
+
+          <label for="region">Region:</label>
+          <select id="region">
+            <option value="global">Global</option>
+            <option value="north-america">North America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+          </select>
+
+          <button class="btn">Apply Filters</button>
+        </div>
+      </section>
+
+      <!-- Forecast Data Section -->
+      <section class="forecast-data">
+        <h2>Forecast Data</h2>
+        <div class="data-grid">
+          <div class="data-card">
+            <h3>Product A</h3>
+            <p>Projected Demand: <strong>10,000 units</strong></p>
+            <p>Growth Rate: <strong>+5%</strong></p>
+          </div>
+          <div class="data-card">
+            <h3>Product B</h3>
+            <p>Projected Demand: <strong>8,000 units</strong></p>
+            <p>Growth Rate: <strong>+3%</strong></p>
+          </div>
+          <div class="data-card">
+            <h3>Product C</h3>
+            <p>Projected Demand: <strong>12,000 units</strong></p>
+            <p>Growth Rate: <strong>+7%</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts">
+        <h2>Demand Trends</h2>
+        <div class="chart-container">
+          <p><em>Chart Placeholder (e.g., Line Chart or Bar Chart)</em></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../../Scripts/LOGOUT.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SALUSLINK Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>

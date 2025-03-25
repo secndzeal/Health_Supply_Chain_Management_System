@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../SIGNUP.css"> 
+    <link rel="stylesheet" href="../CSS/SIGNUP.css">
     <title>Sign Up</title>
 </head>
-
 <body>
-    
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="../Assets/8efef6493d8746459d6c6d3864284d1b-free.png" alt="Website Logo">
@@ -24,31 +22,46 @@
         </nav>
     </header>
 
+    <!-- Signup Form Section -->
     <div class="signup-container">
         <form action="#" method="post">
             <h2>SIGN UP</h2>
+
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
-                required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
             <div class="terms">
                 <input type="checkbox" id="terms" name="terms" required>
                 <label for="terms">I agree to the <a href="T&C's.html">Terms and Conditions</a></label>
             </div>
+
             <button type="submit">Sign Up</button>
+
             <div class="login-link">
                 <p>Already have an account? <a href="LOGIN.html">Login here</a></p>
             </div>
         </form>
-        <script src="Scripts/SIGNUP.js"></script>
     </div>
-</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- Footer Section -->
+    <footer hidden>
+        <p>&copy; 2025 SALUSLINK. All rights reserved.</p>
+    </footer>
 
-<footer><p>&copy; 2025 SALUSLINK. All rights reserved.</p>
-</footer>
+    <!-- Scripts -->
+    <script src="../Scripts/SIGNUP.js"></script>
+</body>
 </html>
